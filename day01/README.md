@@ -35,7 +35,7 @@
   mvn clean package install -Dmaven.examples.skip=true -Dmaven.javadoc.skip=true -Drat.skip=true -Dcheckstyle.skip=true
   ```
 
-  ![image-20210115001730210](D:\Java-training-camp\soul-code-study\第一天\pictures\image-20210115001730210.png)
+  ![image-20210115001730210](D:\Java-training-camp\soul-study\day01\pictures\image-20210115001730210.png)
 
   * **注意**
     * win10系统在执行 上面`mvn`命令时，需要使用`cmd`进入 `soul`目录下执行，`PowerShell`需要对 `-Dmaven.examples.skip=true` 等添加引号。
@@ -52,7 +52,7 @@
 
     启动成功后，访问 http://localhost:9095 用户名：`admin`,密码 :`123456`
 
-    ![image-20210115002956235](D:\Java-training-camp\soul-code-study\第一天\pictures\image-20210115002956235.png)
+    ![image-20210115002956235](D:\Java-training-camp\soul-study\day01\pictures\image-20210115002956235.png)
 
 * 启动`bootstrap`模块
 
@@ -70,11 +70,11 @@
 
   * 选择器如下
 
-    * ![image-20210115015359238](D:\Java-training-camp\soul-code-study\第一天\pictures\image-20210115015359238.png)
+    * ![image-20210115015359238](D:\Java-training-camp\soul-study\day01\pictures\image-20210115015359238.png)
 
   * 规则如下
 
-    * ![image-20210115015431109](D:\Java-training-camp\soul-code-study\第一天\pictures\image-20210115015431109.png)
+    * ![image-20210115015431109](D:\Java-training-camp\soul-study\day01\pictures\image-20210115015431109.png)
 
   * 配置完成后，需要启动业务服务来接入网关，我们以`soul-examples-http`为例
 
@@ -132,7 +132,7 @@
 
       那么，我在访问我的业务系统时,可以不直接指定我业务系统的地址，则执行网关的地址，如下：http://localhost:9195/http/order/findById?id=1
 
-      ![image-20210115020131107](D:\Java-training-camp\soul-code-study\第一天\pictures\image-20210115020131107.png)
+      ![image-20210115020131107](D:\Java-training-camp\soul-study\day01\pictures\image-20210115020131107.png)
 
       ```java
       2021-01-15 02:01:42.639  INFO 30144 --- [work-threads-13] o.d.soul.plugin.base.AbstractSoulPlugin  : divide selector success match , selector name :/http
