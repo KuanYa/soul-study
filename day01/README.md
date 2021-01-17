@@ -35,7 +35,7 @@
   mvn clean package install -Dmaven.examples.skip=true -Dmaven.javadoc.skip=true -Drat.skip=true -Dcheckstyle.skip=true
   ```
 
-  ![image-20210115001730210](.\pictures\image-20210115001730210.png)
+  ![image-20210115001730210](./pictures/image-20210115001730210.png)
 
   * **注意**
     * win10系统在执行 上面`mvn`命令时，需要使用`cmd`进入 `soul`目录下执行，`PowerShell`需要对 `-Dmaven.examples.skip=true` 等添加引号。
