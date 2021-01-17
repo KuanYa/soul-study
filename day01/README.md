@@ -35,11 +35,9 @@
   mvn clean package install -Dmaven.examples.skip=true -Dmaven.javadoc.skip=true -Drat.skip=true -Dcheckstyle.skip=true
   ```
 
-  ![image-20210115001730210](./pictures/image-20210115001730210.png)
-
   * **注意**
-    * win10系统在执行 上面`mvn`命令时，需要使用`cmd`进入 `soul`目录下执行，`PowerShell`需要对 `-Dmaven.examples.skip=true` 等添加引号。
-
+  * win10系统在执行 上面`mvn`命令时，需要使用`cmd`进入 `soul`目录下执行，`PowerShell`需要对 `-Dmaven.examples.skip=true` 等添加引号。
+  
 * 总结：通过跳过相关的模块后，可以很大程度提供编译速度
 
 #### 三、启动模块
@@ -52,7 +50,7 @@
 
     启动成功后，访问 http://localhost:9095 用户名：`admin`,密码 :`123456`
 
-    ![image-20210115002956235](.\pictures\image-20210115002956235.png)
+    ![image-20210115002956235](pictures/image-20210115002956235.png)
 
 * 启动`bootstrap`模块
 
@@ -70,11 +68,11 @@
 
   * 选择器如下
 
-    * ![image-20210115015359238](.\pictures\image-20210115015359238.png)
+    * ![image-20210115015359238](pictures/image-20210115015359238.png)
 
   * 规则如下
 
-    * ![image-20210115015431109](.\pictures\image-20210115015431109.png)
+    * ![image-20210115015431109](pictures/image-20210115015431109.png)
 
   * 配置完成后，需要启动业务服务来接入网关，我们以`soul-examples-http`为例
 
@@ -132,7 +130,7 @@
 
       那么，我在访问我的业务系统时,可以不直接指定我业务系统的地址，则执行网关的地址，如下：http://localhost:9195/http/order/findById?id=1
 
-      ![image-20210115020131107](.\pictures\image-20210115020131107.png)
+      ![image-20210115020131107](pictures/image-20210115020131107.png)
 
       ```java
       2021-01-15 02:01:42.639  INFO 30144 --- [work-threads-13] o.d.soul.plugin.base.AbstractSoulPlugin  : divide selector success match , selector name :/http
@@ -150,9 +148,12 @@
 * `soul-admin` 后台管理可以自定义`选择器`与`规则`
   * `选择器`：相当于流量过滤的第一道网
   * `规则`：流量的最终匹配
+  
 * `soul-bootstrap` 网关的核心组件，流量的转发控制
 
 * 今天是学习`soul`网关的第一天，通过参考官网文档等资料，将`soul-admin`、`soul-bootstrap`启动成功，同时，通过将业务系统接入网关中，
 
   初步了解了网关的大致工作流程，为后面深入学习及源码分析打下基础。
+  
+  
 
