@@ -16,11 +16,11 @@
 
 * 启动 `soul-examples-http`  时，会自动将`soul-examples-http` 的信息写入到`admin`后台中，如下：
 
-  ![image-20210115232607670](D:\Java-training-camp\soul-study\day02\pictures\image-20210115232607670.png)
+  ![image-20210115232607670](pictures\image-20210115232607670.png)
 
 * 指定不同端口，启动另外一个 `soul-examples-http`，启动成功后，在后台选择其中可以看到对应的服务信息已经写入到选择器中
 
-  ![image-20210115232943375](D:\Java-training-camp\soul-study\day02\pictures\image-20210115232943375.png)
+  ![image-20210115232943375](pictures\image-20210115232943375.png)
 
 * 下面我们通过`soul`网关访问两个服务，体验网关带来的负载均衡
 
@@ -28,11 +28,11 @@
 
   * 可以使用idea自带的`HttpClient`工具测试
 
-    ![image-20210115233603270](D:\Java-training-camp\soul-study\day02\pictures\image-20210115233603270.png)
+    ![image-20210115233603270](pictures\image-20210115233603270.png)
 
 * 当我们随机发起多次请求是，每一个`http`服务依次被访问，既每一个服务被访问的概率是相同的，如下：
 
-  ![image-20210115234358111](D:\Java-training-camp\soul-study\day02\pictures\image-20210115234358111.png)
+  ![image-20210115234358111](pictures\image-20210115234358111.png)
 
   综上：可以验证负载均衡策略是成功的
 
@@ -221,7 +221,7 @@
 
 * `divide` 插件处理`http` 请求大致流程如下
 
-  ![image-20210116021010197](D:\Java-training-camp\soul-study\day02\pictures\image-20210116021010197.png)
+  ![image-20210116021010197](pictures\image-20210116021010197.png)
 
 
 
