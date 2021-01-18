@@ -22,7 +22,7 @@
 
   * 执行 `java -jar ZooInspector.jar` （ZooInspector\build\ZooInspector.jar）
 
-    ![image-20210116230153461](D:\Java-training-camp\soul-study\day03\pictures\image-20210116230153461.png)
+    ![image-20210116230153461](pictures/image-20210116230153461.png)
 
 * 总结
 
@@ -38,13 +38,13 @@
 
 * 启动完成后，我们可以看到如下内容：
 
-  ![image-20210116231457644](D:\Java-training-camp\soul-study\day03\pictures\image-20210116231457644.png)
+  ![image-20210116231457644](pictures/image-20210116231457644.png)
 
   已经将选择器与规则数据同步到数据库中，**数据同步的具体源码分析后面会写单独文章分析**
 
-  ![image-20210116231633253](D:\Java-training-camp\soul-study\day03\pictures\image-20210116231633253.png)
+  ![image-20210116231633253](pictures/image-20210116231633253.png)
 
-  ![image-20210116231718342](D:\Java-training-camp\soul-study\day03\pictures\image-20210116231718342.png)
+  ![image-20210116231718342](pictures/image-20210116231718342.png)
   
   综上，通过阅读官方文档了解到，dubbo 插件需要依赖元数据 与 注册中心（本人使用zk） ，所以，当我们看到上面的消息事，代表服务已经能够正常启动，下面让我们来请求服务，感受一下 dubbo 插件是如何 将`http协议` 转换成`dubbo协议`。
 
